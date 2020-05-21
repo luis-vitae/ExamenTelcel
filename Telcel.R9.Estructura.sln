@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entidades", "Entidades", "{92D0E955-AD48-45C9-BE29-D612EB958089}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datos", "Datos", "{20417BCF-1887-4745-8747-4149B4141FAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telcel.R9.Estructura.Negocio", "Telcel.R9.Estructura.Negocio\Telcel.R9.Estructura.Negocio.csproj", "{05CF38BA-BA18-4D2C-9E48-FBA0374E10AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telcel.R9.Estructura.AccesoDatos", "Telcel.R9.Estructura.AccesoDatos\Telcel.R9.Estructura.AccesoDatos.csproj", "{C66A1190-7C4C-4853-A2CA-F896DCD27E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telcel.R9.Estructura.Presentacion", "Telcel.R9.Estructura.Presentacion\Telcel.R9.Estructura.Presentacion.csproj", "{27B00BC9-E5A2-4589-941F-87B585D78EB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Negocio", "Negocio", "{FF092843-87DC-423C-A32B-A3A75D1B6953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05CF38BA-BA18-4D2C-9E48-FBA0374E10AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05CF38BA-BA18-4D2C-9E48-FBA0374E10AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05CF38BA-BA18-4D2C-9E48-FBA0374E10AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05CF38BA-BA18-4D2C-9E48-FBA0374E10AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66A1190-7C4C-4853-A2CA-F896DCD27E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66A1190-7C4C-4853-A2CA-F896DCD27E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66A1190-7C4C-4853-A2CA-F896DCD27E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66A1190-7C4C-4853-A2CA-F896DCD27E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B00BC9-E5A2-4589-941F-87B585D78EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B00BC9-E5A2-4589-941F-87B585D78EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B00BC9-E5A2-4589-941F-87B585D78EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B00BC9-E5A2-4589-941F-87B585D78EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05CF38BA-BA18-4D2C-9E48-FBA0374E10AD} = {92D0E955-AD48-45C9-BE29-D612EB958089}
+		{C66A1190-7C4C-4853-A2CA-F896DCD27E7D} = {20417BCF-1887-4745-8747-4149B4141FAD}
+		{27B00BC9-E5A2-4589-941F-87B585D78EB6} = {FF092843-87DC-423C-A32B-A3A75D1B6953}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {813008D6-BF8A-4F20-8B93-902E1B1C117C}
+	EndGlobalSection
+EndGlobal
