@@ -13,8 +13,6 @@ namespace Telcel.R9.Estructura.Presentacion
         protected void Page_Load(object sender, EventArgs e)
         {
             FillGvEmpleados();
-            FillGVPuesto();
-            FillDepartamentos();
         }
         void FillGvEmpleados()
         {
@@ -23,25 +21,6 @@ namespace Telcel.R9.Estructura.Presentacion
 
             GvEmpleados.DataSource = dts.OrderBy(e => e.EmpleadoID).ToList();
             GvEmpleados.DataBind();
-        }
-
-        void FillGVPuesto()
-        {
-            Puesto puesto = new Puesto();
-            var dts = puesto.MostrarPuesto();
-            cboPuesto.DataSource = dts;
-            cboPuesto.DataTextField = "Descripcion";
-            cboPuesto.DataBind();
-
-        }
-
-        void FillDepartamentos()
-        {
-            Departamento departamento = new Departamento();
-            var dts = departamento.departamentos();
-            cboDepartamento.DataSource = dts;
-            cboDepartamento.DataTextField = "Descripcion";
-            cboDepartamento.DataBind();
         }
 
         protected void BtnBucar_Click1(object sender, EventArgs e)

@@ -68,5 +68,19 @@ namespace Telcel.R9.Estructura.AccesoDatos
             _Conn.Close();
             return resultado;
         }
+
+        public bool CrearEmpleado(Negocio.Empleado empleado)
+        {
+            IDbConnection _Conn = DBConexion.Conexion();
+            _Conn.Open();
+            SqlCommand _Command = new SqlCommand("INSERT_EMPLEADO", _Conn as SqlConnection);
+            _Command.CommandType = CommandType.StoredProcedure;
+            _Command.Parameters.Add(new SqlParameter("@Nombre", empleado.Nombre));
+            _Command.Parameters.Add(new SqlParameter("@PuestoID", empleado.PuestoID));
+            _Command.Parameters.Add(new SqlParameter("@DepartamentoID", empleado.DepartamentoID));
+            int Resultado = _Command.ExecuteNonQuery();
+            _Conn.Close();
+            return true;
+        }
     }
 }

@@ -1,18 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Empleados.aspx.cs" Inherits="Telcel.R9.Estructura.Presentacion.Empleados" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Listado de empleados</h1>
-    <p>
-        <asp:DropDownList ID="cboPuesto" runat="server" CssClass="form-control">
-            <asp:ListItem Value="Descripcion"></asp:ListItem>
-        </asp:DropDownList>
-        <asp:DropDownList ID="cboDepartamento" runat="server" CssClass="form-control">
-            
-        </asp:DropDownList>
-    </p>
-    
-    <asp:TextBox ID="TbBuscar" runat="server" MaxLength="15" CssClass="form-control"  ></asp:TextBox>
+        
+    <asp:TextBox ID="TbBuscar" runat="server" MaxLength="15" CssClass="form-control" placeholder="Escribe el nombre del empleado" ></asp:TextBox>
     <asp:Button ID="BtnBucar" runat="server" Text="Buscar" CssClass="btn btn-primary" OnClick="BtnBucar_Click1" />
-    
+    <br />
+    <a href="CrearEmpleado.aspx">Crear nuevo empleado</a>
     <br />
     <br />
     <asp:GridView ID="GvEmpleados" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="EmpleadoID" ForeColor="#333333" GridLines="None" PageSize="30" OnRowCommand="GvEmpleados_RowCommand">

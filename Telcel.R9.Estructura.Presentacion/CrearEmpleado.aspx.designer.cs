@@ -11,34 +11,43 @@ namespace Telcel.R9.Estructura.Presentacion
 {
 
 
-    public partial class Empleados
+    public partial class CrearEmpleado
     {
 
         /// <summary>
-        /// Control TbBuscar.
+        /// Control tbNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbBuscar;
+        protected global::System.Web.UI.WebControls.TextBox tbNombre;
 
         /// <summary>
-        /// Control BtnBucar.
+        /// Control cboPuesto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnBucar;
+        protected global::System.Web.UI.WebControls.DropDownList cboPuesto;
 
         /// <summary>
-        /// Control GvEmpleados.
+        /// Control cboDepartamento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GvEmpleados;
+        protected global::System.Web.UI.WebControls.DropDownList cboDepartamento;
+
+        /// <summary>
+        /// Control btnCrear.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCrear;
     }
 }
